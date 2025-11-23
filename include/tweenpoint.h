@@ -69,10 +69,10 @@ namespace tweeny {
             template<typename F> void via(F f);
 
             /* Returns the highest value in duration array */
-            uint16_t duration() const;
+            uint32_t duration() const;
 
             /* Returns the value of that specific value */
-            uint16_t duration(size_t i) const;
+            uint32_t duration(size_t i) const;
         };
     }
 }

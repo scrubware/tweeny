@@ -67,7 +67,7 @@ namespace tweeny {
             typedef std::function<bool(tween<Ts...> &)> noValuesCallbackType;
             typedef std::function<bool(Ts...)> noTweenCallbackType;
             typedef typename valuetype<equal<Ts...>::value, Ts...>::type valuesType;
-            typedef std::array<uint16_t, sizeof...(Ts)> durationsArrayType;
+            typedef std::array<uint32_t, sizeof...(Ts)> durationsArrayType;
             typedef tween<Ts...> type;
         };
     }

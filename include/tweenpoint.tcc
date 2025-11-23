@@ -68,14 +68,14 @@ namespace tweeny {
 
         template<typename... Ts>
         inline tweenpoint<Ts...>::tweenpoint(Ts... vs) : values{vs...} {
-            during(static_cast<uint16_t>(0));
+            during(static_cast<uint32_t>(0));
             via(easing::def);
         }
 
         template<typename... Ts>
         template<typename D>
         inline void tweenpoint<Ts...>::during(D milis) {
-            for (uint16_t & t : durations) { t = static_cast<uint16_t>(milis); }
+            for (uint32_t & t : durations) { t = static_cast<uint32_t>(milis); }
         }
 
         template<typename... Ts>
